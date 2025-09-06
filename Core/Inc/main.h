@@ -57,6 +57,7 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+// TODO: verify this pinout
 #define BOARD_LED_Pin GPIO_PIN_13
 #define BOARD_LED_GPIO_Port GPIOC
 #define M0_Pin GPIO_PIN_1

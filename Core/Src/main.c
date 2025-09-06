@@ -108,7 +108,7 @@ int main(void)
 				main_e22_configurationMode,
 				main_e22_transceiverMode);
 
-
+  printf("E22 LoRa module initialized.\r\n");
   //Start FreeRTOS task creation
   xTaskCreate(led_toggle_task, "Toggle GPIO13", 128, NULL, 1, NULL);
 
@@ -317,7 +317,7 @@ static void e22_transmission_task(void *parameter)
 	for(;;)
 	{
 		xTaskDelayUntil( &xLastWakeTime, pdMS_TO_TICKS(xPeriod));
-
+		printf("E22 Tx task running. Attempting to send 'ping'...\r\n");
 		e22_lora_transnit(packet, packetSize, receiverAddress, ComChannel);
 	}
 }
@@ -348,6 +348,7 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 {
 	//Change the TX line state to ready
 	e22_lora_make_ready();
+	printf("UART TX complete. Packet sent from MCU to E22.\r\n");
 }
 /**
  * @brief 	UART data reception complete callback over DMA
@@ -374,10 +375,11 @@ static void main_lora_packet_receive(uint8_t* dataPacket, uint8_t size)
 	//Copy data to the main layer
 	memcpy(&loraPacket, dataPacket, size);
 	// TODO: implement main layer packet handling
-
+	printf("Received LoRa packet, size: %d, data: %s\r\n", size, loraPacket);
 	if(0 == memcmp(loraPacket, "pong", size))
 	{
 		HAL_GPIO_TogglePin(BOARD_LED_GPIO_Port, BOARD_LED_Pin);
+		printf("Received 'pong'! Toggling LED.\r\n");
 	}
 }
 /* USER CODE END 4 */
