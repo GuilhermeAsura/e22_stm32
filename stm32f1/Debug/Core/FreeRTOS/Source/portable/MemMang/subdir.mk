@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (13.3.rel1)
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../Core/FreeRTOS/Source/portable/MemMang/heap_4.c 
+
+OBJS += \
+./Core/FreeRTOS/Source/portable/MemMang/heap_4.o 
+
+C_DEPS += \
+./Core/FreeRTOS/Source/portable/MemMang/heap_4.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Core/FreeRTOS/Source/portable/MemMang/%.o Core/FreeRTOS/Source/portable/MemMang/%.su Core/FreeRTOS/Source/portable/MemMang/%.cyclo: ../Core/FreeRTOS/Source/portable/MemMang/%.c Core/FreeRTOS/Source/portable/MemMang/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I"/home/guilherme-lazzarini/STM32CubeIDE/workspace_1.19.0/PAY_lora_maldito/Core/FreeRTOS/Source/include" -I"/home/guilherme-lazzarini/STM32CubeIDE/workspace_1.19.0/PAY_lora_maldito/Core/FreeRTOS/Source/portable/MemMang" -I"/home/guilherme-lazzarini/STM32CubeIDE/workspace_1.19.0/PAY_lora_maldito/Core/FreeRTOS/Source" -I"/home/guilherme-lazzarini/STM32CubeIDE/workspace_1.19.0/PAY_lora_maldito/Core/FreeRTOS" -I"/home/guilherme-lazzarini/STM32CubeIDE/workspace_1.19.0/PAY_lora_maldito/Core/FreeRTOS/Source/portable/GCC/ARM_CM3" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
+
+clean: clean-Core-2f-FreeRTOS-2f-Source-2f-portable-2f-MemMang
+
+clean-Core-2f-FreeRTOS-2f-Source-2f-portable-2f-MemMang:
+	-$(RM) ./Core/FreeRTOS/Source/portable/MemMang/heap_4.cyclo ./Core/FreeRTOS/Source/portable/MemMang/heap_4.d ./Core/FreeRTOS/Source/portable/MemMang/heap_4.o ./Core/FreeRTOS/Source/portable/MemMang/heap_4.su
+
+.PHONY: clean-Core-2f-FreeRTOS-2f-Source-2f-portable-2f-MemMang
+

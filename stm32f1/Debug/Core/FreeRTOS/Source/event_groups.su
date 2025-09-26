@@ -1,0 +1,12 @@
+/home/guilherme-lazzarini/STM32CubeIDE/workspace_1.19.0/PAY_lora_maldito/Core/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h:178:20:vPortSetBASEPRI	16	static,ignoring_inline_asm
+/home/guilherme-lazzarini/STM32CubeIDE/workspace_1.19.0/PAY_lora_maldito/Core/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h:187:24:ulPortRaiseBASEPRI	16	static,ignoring_inline_asm
+../Core/FreeRTOS/Source/event_groups.c:148:24:xEventGroupCreate	16	static
+../Core/FreeRTOS/Source/event_groups.c:194:13:xEventGroupSync	48	static,ignoring_inline_asm
+../Core/FreeRTOS/Source/event_groups.c:317:13:xEventGroupWaitBits	56	static,ignoring_inline_asm
+../Core/FreeRTOS/Source/event_groups.c:473:13:xEventGroupClearBits	24	static
+../Core/FreeRTOS/Source/event_groups.c:517:13:xEventGroupGetBitsFromISR	32	static
+../Core/FreeRTOS/Source/event_groups.c:533:13:xEventGroupSetBits	56	static
+../Core/FreeRTOS/Source/event_groups.c:629:6:vEventGroupDelete	24	static
+../Core/FreeRTOS/Source/event_groups.c:677:6:vEventGroupSetBitsCallback	16	static
+../Core/FreeRTOS/Source/event_groups.c:686:6:vEventGroupClearBitsCallback	16	static
+../Core/FreeRTOS/Source/event_groups.c:693:19:prvTestWaitCondition	32	static

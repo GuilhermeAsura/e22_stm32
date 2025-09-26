@@ -1,0 +1,13 @@
+/home/guilherme-lazzarini/STM32CubeIDE/workspace_1.19.0/PAY_lora_maldito/Core/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h:178:20:vPortSetBASEPRI	1
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:150:15:pxPortInitialiseStack	1
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:171:13:prvTaskExitError	2
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:188:6:SVC_Handler	1
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:208:13:prvStartFirstTask	1
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:228:12:xPortStartScheduler	5
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:294:6:vPortEndScheduler	2
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:302:6:vPortEnterCritical	3
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:319:6:vPortExitCritical	3
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:331:6:PendSV_Handler	1
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:368:6:SysTick_Handler	2
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:538:32:vPortSetupTimerInterrupt	1
+../Core/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c:564:10:vPortValidateInterruptPriority	4
