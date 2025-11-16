@@ -1,11 +1,3 @@
-Com certeza\! Baseado no seu README anterior (`e22_nashira`) e na nova estrutura de arquivos (`e22_stm32` com as pastas `stm32f1` e `stm32f4`), preparei uma atualização que generaliza o propósito do repositório, mantendo o estilo e as informações de contexto da EPTA.
-
-A principal mudança é que o README agora reflete que este repositório contém **duas implementações separadas** (uma para STM32F1 e outra para STM32F4), em vez de um único projeto.
-
-Aqui está a sugestão de atualização para o seu `README.md`:
-
------
-
 # 🚀 e22\_stm32 - Implementações LoRa (E22) para STM32F1 & STM32F4
 
 This repository contains the development of embedded firmware for the **E22 LoRa module (SX1262)**, with implementations for the **STM32F1** and **STM32F4** families. The project was developed within the context of the **Propulsion and Aerospace Technology Team (EPTA) at the Federal University of Uberlândia (UFU)** for testing and validating LoRa communication.
